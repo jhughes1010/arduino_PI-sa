@@ -22,9 +22,9 @@ const byte syncDemodOff = HIGH;        // Sample gate turns off when input low
 
 // Detector timings
 float txOn = normalPower;        // TX-on time using normal power mode
-float defMainDelay = 10E-6;      // Default main sample delay (10us)
+float defMainDelay = 8E-6;      // Default main sample delay (8us)
 float mainDelay = defMainDelay;  // Main sample pulse delay
-float mainSample = 15E-6;        // Main sample pulse width (15us)
+float mainSample = 13E-6;        // Main sample pulse width (13us)
 float efeDelay = 240E-6;         // EFE sample pulse delay (240us)
 float efeSample = mainSample;    // EFE sample pulse width (same as main sample)
 float txPeriod = 1E-3;           // TX period (1ms)
@@ -32,7 +32,7 @@ float txPeriod = 1E-3;           // TX period (1ms)
 // Timing offsets
 float txOnOffset = 3E-6;         // TX-on pulse offset (3us)
 float mainDelayOffset = 4.2E-6;  // Main delay pulse offset (4.2us)
-float mainSampleOffset = 5E-6;   // Main sample pulse offset (5us)
+float mainSampleOffset = 3E-6;   // Main sample pulse offset (3us)
 float efeDelayOffset = 12E-6;    // EFE delay pulse offset (12us)
 float efeSampleOffset = 4E-6;    // EFE sample pulse offset (4us)
 float txPeriodOffset = 30E-6;    // TX period offset (30us)
